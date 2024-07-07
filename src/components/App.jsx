@@ -4,7 +4,7 @@ import Statistics from "./Statistics/Statistics";
 import React from "react";
 import Notification from "./Notification/Notification";
 import { Component } from "react";
-import styles from "./Statistics/Statistics.module.css";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -57,7 +57,7 @@ class App extends Component {
           neutral={neutral}
           bad={bad}
           total={total}
-            positiveFeedbackPercentage={positiveFeedbackPercentage}
+          positiveFeedbackPercentage={positiveFeedbackPercentage}
           />)}        
         </Section>        
       </div>
