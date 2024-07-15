@@ -1,6 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
 import styles from "./Statistics.module.css";
+import propTypes from 'prop-types';
 
 function Statistics({ good, neutral, bad, total, positiveFeedbackPercentage}) {
 
@@ -22,6 +23,13 @@ function Statistics({ good, neutral, bad, total, positiveFeedbackPercentage}) {
       </div>
       </Fragment>
     );
+}
+Statistics.propTypes = {
+  good: propTypes.number,
+  neutral: propTypes.number,
+  bad: propTypes.number,
+  total: propTypes.number,
+  positiveFeedbackPercentage: propTypes.number,
 }
 export default Statistics;
     

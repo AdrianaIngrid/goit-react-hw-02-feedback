@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Section.module.css";
+import propType from 'prop-types';
 function Section({ title, children }) {
 
     return (
@@ -9,4 +10,8 @@ function Section({ title, children }) {
       </section>
     );
 }
+Section.propType = {
+  title: propType.string,
+}
+
 export default Section;
